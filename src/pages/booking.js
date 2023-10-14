@@ -3,6 +3,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { UserOutlined } from "@ant-design/icons";
 import { Input } from "antd";
+import RootLayout from "@/components/Layouts/RootLayout";
 const { TextArea } = Input;
 
 const BookingPage = () => {
@@ -143,3 +144,7 @@ const BookingPage = () => {
 };
 
 export default BookingPage;
+
+BookingPage.getLayout = function getLayout(page) {
+  return <RootLayout>{page}</RootLayout>;
+};
