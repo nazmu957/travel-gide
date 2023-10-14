@@ -36,14 +36,14 @@ const AllProducts = ({ allProducts }) => {
             <Card
               hoverable
               className={styles.card}
-              cover={
-                <Image
-                  src={product?.image_url}
-                  layout="responsive"
-                  height={300}
-                  alt="news image"
-                />
-              }
+              // cover={
+              //   <Image
+              //     src={product?.image_url}
+              //     layout="responsive"
+              //     height={300}
+              //     alt="news image"
+              //   />
+              // }
             >
               <h3 className={styles.title}>Product Name: {product?.title}</h3>
               <h3>Category: {product?.category}</h3>

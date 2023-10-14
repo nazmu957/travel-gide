@@ -28,11 +28,11 @@ const ProductDetailPage = ({ product }) => {
           Components Details
         </h1>
         <figure>
-          <img
+          {/* <img
             style={{ width: "30rem", height: "40rem" }}
             src={product?.image_url}
             alt="car!"
-          />
+          /> */}
         </figure>
         <div className="card-body">
           <h2 className="card-title">{product.title}</h2>

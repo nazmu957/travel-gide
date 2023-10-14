@@ -41,14 +41,14 @@ const MultiProducts = ({ moreProducts }) => {
           >
             <Card
               hoverable
-              cover={
-                <img
-                  src={product?.image_url}
-                  style={{ height: "20rem" }}
-                  responsive
-                  alt="news image"
-                />
-              }
+              // cover={
+              //   <img
+              //     src={product?.image_url}
+              //     style={{ height: "20rem" }}
+              //     responsive
+              //     alt="news image"
+              //   />
+              // }
             >
               <h3>Product Name: {product?.name}</h3>
               <h3>Category: {product?.category}</h3>

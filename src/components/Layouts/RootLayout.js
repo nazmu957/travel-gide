@@ -86,7 +86,7 @@ const RootLayout = ({ children }) => {
       </div>
       {/* Main Nav Part */}
 
-      <div style={{ height: "6rem"}} className="navbar  bg-red-100">
+      <div style={{ height: "6rem" }} className="navbar  bg-red-100">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -110,7 +110,7 @@ const RootLayout = ({ children }) => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a>Item 1</a>
+                <Link href={"/service"}>Service</Link>
               </li>
               <li>
                 <a>Parent</a>
@@ -128,12 +128,12 @@ const RootLayout = ({ children }) => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">Travel-Gide</a>
+          <Link href={"/"} className="btn btn-ghost normal-case text-xl">Travel-Gide</Link>
         </div>
         <div className="navbar-start hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Item 1</a>
+              <Link href={"/service"}>Service</Link>
             </li>
 
             <li>
@@ -187,7 +187,6 @@ const RootLayout = ({ children }) => {
         <form>
           <header className="footer-title">Newsletter</header>
           <fieldset className="form-control w-80">
-            
             <div className="relative">
               <input
                 type="text"

@@ -1,12 +1,19 @@
 import RootLayout from "@/components/Layouts/RootLayout";
 
-import React from "react";
+import React, { useState } from "react";
 import { Card } from "antd";
 
 const { Meta } = Card;
 
 const DetailPage = ({ detail }) => {
-  console.log(detail);
+const [isChecked, setIsChecked] = useState(true);
+
+const handleCheckboxChange = () => {
+  setIsChecked(!isChecked);
+  alert('Add Booking List ??')
+};
+
+  // console.log(detail);
 
   return (
     <div>
@@ -17,9 +24,15 @@ const DetailPage = ({ detail }) => {
         }}
         // cover={<img alt="example" src={product?.image_url} />}
       >
-        <img src={detail?.image_url} alt="" />
+        {/* <img src={detail?.image_url} alt="" /> */}
         <h3>Category: {detail?.name}</h3>
         <h3>Category: {detail?.description}</h3>
+        <input
+          type="checkbox"
+          className="toggle"
+          checked={isChecked}
+          onChange={handleCheckboxChange}
+        />
       </Card>
     </div>
   );

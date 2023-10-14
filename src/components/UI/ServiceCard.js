@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const ServiceCard = ( { service }) => {
@@ -6,10 +7,10 @@ const ServiceCard = ( { service }) => {
     return (
       <div className="card  bg-base-100 shadow-xl">
         <figure>
-          <img
+          {/* <img
             src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
             alt="Shoes"
-          />
+          /> */}
         </figure>
         <div className="card-body">
           <h2 className="card-title">
@@ -21,7 +22,8 @@ const ServiceCard = ( { service }) => {
             <div className="badge badge-outline">{rating}</div>
             <div className="badge badge-outline">{status}</div>
           </div>
-          <button>Link</button>
+          
+          <Link href={`/details/${id}`}>Link</Link>
         </div>
       </div>
     );
