@@ -1,16 +1,18 @@
 import React, { useState } from "react";
-
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { UserOutlined } from "@ant-design/icons";
 import { Input } from "antd";
 const { TextArea } = Input;
 
-
 const BookingPage = () => {
   const [selectedDate, setSelectedDate] = useState(new Date());
   const [isChecked, setIsChecked] = useState(true);
-  
+  const [price, setPrice] = useState("");
+  const [paymentOption, setPaymentOption] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [details, setDetails] = useState("");
+  const [slotAvailable, setSlotAvailable] = useState(true);
 
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
@@ -18,10 +20,26 @@ const BookingPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Create a Date object for the selected date and time
+    const formattedDate = selectedDate.toLocaleString();
+
+    // Create an object with form data including date and time
+    const formData = {
+      dateAndTime: formattedDate,
+      price,
+      paymentOption,
+      phoneNumber,
+      details,
+      slotAvailable,
+    };
+
+    // Log form data to the console
+    console.log("Form Data:", formData);
+
     // Perform form submission logic here (e.g., sending data to API)
     // Assuming the form submission is successful
-    alert('done')
-    
+    alert("done");
   };
 
   return (
@@ -45,14 +63,18 @@ const BookingPage = () => {
           <label className="label">
             <span className="label-text">Price: </span>
           </label>
-          <select className="select select-bordered">
+          <select
+            className="select select-bordered"
+            value={price}
+            onChange={(e) => setPrice(e.target.value)}
+          >
             <option disabled selected>
               Pick one
             </option>
             <option>$541</option>
             <option>$541</option>
             <option>$541</option>
-            <option>$541</option>
+            
           </select>
         </div>
 
@@ -60,38 +82,41 @@ const BookingPage = () => {
           <label className="label">
             <span className="label-text">Payment Option </span>
           </label>
-          <select className="select select-bordered">
+          <select
+            className="select select-bordered"
+            value={paymentOption}
+            onChange={(e) => setPaymentOption(e.target.value)}
+          >
             <option disabled selected>
               Pick one
             </option>
             <option>Bikash</option>
             <option>Nogod</option>
+            
           </select>
-        </div>
-
-        <div className="form-control">
-          <label
-            className="cursor-pointer label"
-            onClick={handleCheckboxChange}
-          >
-            <span className="label-text">Confirm Booking</span>
-            <input
-              type="checkbox"
-              checked={isChecked}
-              className="checkbox checkbox-info bg-red-400"
-              onChange={() => {}}
-            />
-          </label>
         </div>
 
         <div>
           <span>Phone Number:</span>
-          <Input placeholder="default size" prefix={<UserOutlined />} />
+          <Input
+            id="phoneNumber"
+            type="number"
+            value={phoneNumber}
+            onChange={(e) => setPhoneNumber(e.target.value)}
+            placeholder="Enter phone number"
+          />
         </div>
 
         <div>
           <span>Your Details: </span>
-          <TextArea rows={4} placeholder="maxLength is 6" maxLength={6} />
+          <TextArea
+            id="details"
+            rows={4}
+            value={details}
+            onChange={(e) => setDetails(e.target.value)}
+            placeholder="Enter details"
+            maxLength={6}
+          />
         </div>
 
         <div className="flex flex-col">
@@ -99,9 +124,11 @@ const BookingPage = () => {
             <label className="cursor-pointer label">
               <span className="label-text">Slot Available</span>
               <input
+                id="slotAvailable"
                 type="checkbox"
                 className="toggle toggle-primary border-4"
-                checked
+                checked={slotAvailable}
+                onChange={() => setSlotAvailable(!slotAvailable)}
               />
             </label>
           </div>

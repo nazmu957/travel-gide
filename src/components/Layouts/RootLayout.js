@@ -128,7 +128,9 @@ const RootLayout = ({ children }) => {
               </li>
             </ul>
           </div>
-          <Link href={"/"} className="btn btn-ghost normal-case text-xl">Travel-Gide</Link>
+          <Link href={"/"} className="btn btn-ghost normal-case text-xl">
+            Travel-Gide
+          </Link>
         </div>
         <div className="navbar-start hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -137,7 +139,7 @@ const RootLayout = ({ children }) => {
             </li>
 
             <li>
-              <a>Item 3</a>
+              <Link href={"/booking"}>Booking</Link>
             </li>
           </ul>
         </div>
