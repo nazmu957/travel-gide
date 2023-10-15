@@ -2,6 +2,7 @@ import RootLayout from "@/components/Layouts/RootLayout";
 import EditModal from "@/components/UI/EditModal";
 import React, { useRef, useState } from "react";
 import { Input } from "antd";
+import Head from "next/head";
 
 const UserProfile = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -43,6 +44,9 @@ const UserProfile = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
       {/* Left Part */}
+      <Head>
+        <title>User</title>
+      </Head>
       <div className="col-span-1 md:col-span-1 p-4 md:w-35">
         <div className="flex justify-center">
           <div>
