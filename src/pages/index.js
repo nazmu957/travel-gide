@@ -31,7 +31,7 @@ const HomePage = ({ allProducts, allCategories }) => {
       </Head>
       <Banner />
       <AllProducts allProducts={allProducts} />
-      <AllCategories allCategories={allCategories} />
+      
       <ImageGallery />
       <Testimonial />
       <AboutUs />

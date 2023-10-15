@@ -148,6 +148,12 @@ const RootLayout = ({ children }) => {
             <li>
               <Link href={"/feedback"}>Feedback</Link>
             </li>
+            <li>
+              <Link href={"/dashbord/user"}>User</Link>
+            </li>
+            <li>
+              <Link href={"/dashbord/admin"}>Admin</Link>
+            </li>
           </ul>
         </div>
         <div className="navbar-end">
