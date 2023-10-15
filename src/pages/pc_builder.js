@@ -37,8 +37,9 @@ PcBuilderPage.getLayout = function getLayout(page) {
 
 export const getServerSideProps = async () => {
   try {
-    const apiUrl1 = "https://pc-builder-server-ruddy.vercel.app/products";
-    const apiUrl2 = "https://pc-builder-server-ruddy.vercel.app/categories";
+    const apiUrl1 = "https://travel-gide-server-nazmu957.vercel.app/products";
+    const apiUrl2 =
+      "https://travel-gide-server-nazmu957.vercel.app/categories";
 
     const [data1, data2] = await axios.all([
       axios.get(apiUrl1),
@@ -66,7 +67,7 @@ export const getServerSideProps = async () => {
 };
 
 // export const getStaticProps = async () => {
-//   const res = await fetch("https://pc-builder-server-ruddy.vercel.app/products");
+//   const res = await fetch("https://travel-gide-server-nazmu957.vercel.app/products");
 //   // const res = await fetch("http://localhost:3000/api/products");
 //   const data = await res.json();
 //   console.log(data);

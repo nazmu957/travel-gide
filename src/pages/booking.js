@@ -75,7 +75,6 @@ const BookingPage = () => {
             <option>$541</option>
             <option>$541</option>
             <option>$541</option>
-            
           </select>
         </div>
 
@@ -93,7 +92,6 @@ const BookingPage = () => {
             </option>
             <option>Bikash</option>
             <option>Nogod</option>
-            
           </select>
         </div>
 
@@ -133,6 +131,7 @@ const BookingPage = () => {
               />
             </label>
           </div>
+          <span className="text-primary">Cancellation Policy</span>
         </div>
 
         <button type="submit" className="btn btn-primary mt-4">

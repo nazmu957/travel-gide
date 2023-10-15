@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const apiSlice = createApi({
   reducerPath: "api",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://pc-builder-server-ruddy.vercel.app",
+    baseUrl: "https://travel-gide-server-nazmu957.vercel.app",
   }),
   endpoints: (builder) => ({
     getProducts: builder.query({

@@ -55,7 +55,10 @@ const UserProfile = () => {
               className=" right-0 bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-700"
               onClick={openFileInput}
             >
-              Edit
+              Edit profile
+            </button>
+            <button className=" right-0 bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-700">
+              Logout
             </button>
           </div>
 
@@ -105,7 +108,13 @@ const UserProfile = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="col-span-1 sm:col-span-1">
-            <h1>Left</h1>
+            <div className="card  bg-base-100 shadow-xl mt-5">
+              <div className="card-body">
+                <h2 className="card-title">Western Blt From San Francisco</h2>
+                <p>Price: $595</p>
+                <p>Location: New York</p>
+              </div>
+            </div>
           </div>
           <div className="col-span-1 sm:col-span-1">
             <div className="card bg-base-100 shadow-xl">

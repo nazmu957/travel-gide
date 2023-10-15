@@ -11,11 +11,11 @@ import styles from "@/styles/AllProducts.module.css";
 
 const AllProducts = ({ allProducts }) => {
   const products = allProducts.data;
-
+console.log(products)
   const { Meta } = Card;
   return (
     <>
-      <h1 className={styles.heading}>Products</h1>
+      <h1 className={styles.heading}>Our Packages</h1>
       <Row
         gutter={{
           xs: 8,
@@ -36,22 +36,22 @@ const AllProducts = ({ allProducts }) => {
             <Card
               hoverable
               className={styles.card}
-              // cover={
-              //   <Image
-              //     src={product?.image_url}
-              //     layout="responsive"
-              //     height={300}
-              //     alt="news image"
-              //   />
-              // }
+              cover={
+                <Image
+                  src={product?.image_url}
+                  layout="responsive"
+                  height={300}
+                  alt="news image"
+                />
+              }
             >
-              <h3 className={styles.title}>Product Name: {product?.title}</h3>
-              <h3>Category: {product?.category}</h3>
+              <h3 className={styles.title}> {product?.title}</h3>
+
               <h3>Price: {product?.price}</h3>
-              <h3>Status: {product?.status}</h3>
+
               <h3>Rating: {product?.rating}</h3>
               <Link href={`/products/${product?.id}`}>
-                <p className={styles.link}>More Detail</p>
+                <button className="btn btn-info w-full  mt-5">Detail</button>
               </Link>
             </Card>
           </Col>

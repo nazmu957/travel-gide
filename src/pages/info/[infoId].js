@@ -58,7 +58,9 @@ InfoPage.getLayout = function getLayout(page) {
 };
 
 export const getStaticPaths = async () => {
-  const res = await fetch("https://pc-builder-server-ruddy.vercel.app/info");
+  const res = await fetch(
+    "https://travel-gide-server-nazmu957.vercel.app/info"
+  );
   const infos = await res.json();
 
   const paths = infos?.data?.map((info) => ({
@@ -71,7 +73,7 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async (context) => {
   const { params } = context;
   const res = await fetch(
-    `https://pc-builder-server-ruddy.vercel.app/info/${params.infoId}`
+    `https://travel-gide-server-nazmu957.vercel.app/info/${params.infoId}`
   );
   const data = await res.json();
 

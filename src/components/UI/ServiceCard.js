@@ -3,14 +3,11 @@ import React from 'react';
 
 const ServiceCard = ( { service }) => {
     console.log(service)
-    const { id,title,description,price,rating,status} = service;
+    const { id,title,description,price,rating,status,image_url} = service;
     return (
       <div className="card  bg-base-100 shadow-xl">
         <figure>
-          {/* <img
-            src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-            alt="Shoes"
-          /> */}
+          <img src={image_url} alt="photo" className="w-full h-[18rem]" />
         </figure>
         <div className="card-body">
           <h2 className="card-title">
@@ -19,11 +16,11 @@ const ServiceCard = ( { service }) => {
           </h2>
           <p>{description}</p>
           <div className="card-actions justify-end">
-            <div className="badge badge-outline">{rating}</div>
-            <div className="badge badge-outline">{status}</div>
+            <div className="badge badge-outline">Ratting: {rating}</div>
+            <div className="badge badge-outline">Availability: {status}</div>
           </div>
-          
-          <Link href={`/details/${id}`}>Link</Link>
+
+          <Link href={`/details/${id}`}>Detail</Link>
         </div>
       </div>
     );
