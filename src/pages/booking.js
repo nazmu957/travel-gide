@@ -78,7 +78,7 @@ const BookingPage = () => {
           </select>
         </div>
 
-        <div className="form-control w-full max-w-xs">
+        <div className="form-control w-full max-w-xs py-2">
           <label className="label">
             <span className="label-text">Payment Option </span>
           </label>
@@ -95,7 +95,7 @@ const BookingPage = () => {
           </select>
         </div>
 
-        <div>
+        <div className="py-2">
           <span>Phone Number:</span>
           <Input
             id="phoneNumber"
@@ -106,7 +106,7 @@ const BookingPage = () => {
           />
         </div>
 
-        <div>
+        <div className="py-2">
           <span>Your Details: </span>
           <TextArea
             id="details"

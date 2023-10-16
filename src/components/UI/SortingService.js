@@ -18,17 +18,17 @@ const SortingService = ({ services }) => {
      setSortedServices(sorted);
    };
   return (
-    <div>
+    <div >
       <input
         type="range"
         min={0}
         max="600"
         value={priceFilter}
-        className="range"
+        className="range mb-5"
         step="25"
         onChange={handlePriceChange}
       />
-      Render sorted services
+      <h3>Sort with price</h3>
       {sortedServices.map((service) => (
         <SortingCard key={service.id} service={service} />
       ))}

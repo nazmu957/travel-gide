@@ -31,7 +31,7 @@ const ServicePage = () => {
         <button className="btn-primary">Search</button>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4 p-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4 p-4 mb-5 ">
         {/* Sidebar */}
         <div className="lg:col-span-3 xl:col-span-4">
           <Head>
@@ -46,7 +46,7 @@ const ServicePage = () => {
         </div>
 
         {/* Main Content */}
-        <div className="lg:col-span-1 bg-gray-200 p-4">
+        <div className="lg:col-span-1 bg-gray-200 p-4 ">
           <SortingService services={services} />
         </div>
       </div>

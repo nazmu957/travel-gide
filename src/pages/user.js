@@ -79,7 +79,12 @@ const UserProfile = () => {
             </p>
           </div>
           <div>
-            <button onClick={handleEdit}>change</button>
+            <button
+              className=" btn btn-xs bg-sky-300 border-0 font-bold "
+              onClick={handleEdit}
+            >
+              Edit
+            </button>
           </div>
           <div></div>
         </div>

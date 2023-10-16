@@ -15,7 +15,7 @@ console.log(products)
   const { Meta } = Card;
   return (
     <>
-      <h1 className={styles.heading}>Our Packages</h1>
+      <h1 className="text-2xl text-center py-8">Our Packages</h1>
       <Row
         gutter={{
           xs: 8,

@@ -1,21 +1,21 @@
 import React, { useState } from "react";
 
 const SortingCard = ({ service }) => {
-  const [isVisible, setIsVisible] = useState(true); // State to manage card visibility
+  const [isVisible, setIsVisible] = useState(true); 
 
   const { id, title, description, price, rating, status } = service;
 
   const handleButtonClick = () => {
-    setIsVisible(false); // Set isVisible state to false when button is clicked
+    setIsVisible(false); 
   };
 
   if (!isVisible) {
-    return null; // If isVisible is false, do not render the card (hide it)
+    return null; 
   }
 
   return (
-    <div className="card  bg-base-100 shadow-xl">
-      <div className="card-body">
+    <div className="card mb-5 bg-sky-200 shadow-xl">
+      <div className="card-body  ">
         <div className="card-actions justify-end">
           <button className="btn btn-square btn-sm" onClick={handleButtonClick}>
             <svg
@@ -34,7 +34,8 @@ const SortingCard = ({ service }) => {
             </svg>
           </button>
         </div>
-        <p>{price}</p>
+        <h4>{title}</h4>
+        <p>Price:${price}</p>
       </div>
     </div>
   );

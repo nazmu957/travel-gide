@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+
 
 const AdminData = () => {
   const [userData, setUserData] = useState([
@@ -8,6 +9,8 @@ const AdminData = () => {
     { id: 4, name: "Noman", payment: "$025", date: "20/8/23" },
     { id: 5, name: "Sabbir", payment: "$390", date: "30/8/23" },
   ]);
+
+  
 
   const handleDelete = (id) => {
     const confirmDelete = window.confirm(
@@ -19,6 +22,49 @@ const AdminData = () => {
     }
   };
 
+ const canvasRef = useRef(null);
+
+ useEffect(() => {
+   const canvas = canvasRef.current;
+   const ctx = canvas.getContext("2d");
+
+   // Calculate max payment value for scaling
+   const maxPayment = Math.max(
+     ...userData.map((user) => parseInt(user.payment.slice(1), 10))
+   );
+
+   // Clear the canvas before drawing
+   ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+   // Draw bars and details based on payment data
+   userData.forEach((user, index) => {
+     const barHeight =
+       (parseInt(user.payment.slice(1), 10) / maxPayment) * canvas.height;
+     const barWidth = 50;
+     const x = index * (barWidth + 20);
+     const y = canvas.height - barHeight;
+
+     // Draw bar
+     ctx.fillStyle = "blue";
+     ctx.fillRect(x, y, barWidth, barHeight);
+
+     // Draw user name below the bar
+     ctx.fillStyle = "black";
+     ctx.fillText(user.name, x, canvas.height + 20);
+
+     // Draw payment amount above the bar
+     ctx.fillStyle = "white";
+     ctx.fillText(user.payment, x, y - 10);
+
+     // Draw other details (e.g., date) above the payment amount
+     ctx.fillStyle = "gray";
+     ctx.fillText(user.date, x, y - 25);
+   });
+ }, [userData]);
+
+ 
+
+  
   return (
     <div className="w-3/4 p-4 mx-auto">
       <h2 className="text-2xl py-4 font-semibold mb-4 text-center">
@@ -54,6 +100,16 @@ const AdminData = () => {
             ))}
           </tbody>
         </table>
+      </div>
+      <div className="mt-4">
+        <h2 className="text-2xl py-4 font-semibold mb-4 text-center">
+          Payment Statistics
+        </h2>
+        <canvas
+          ref={canvasRef}
+          width={userData.length * 70}
+          height={300}
+        ></canvas>
       </div>
     </div>
   );
