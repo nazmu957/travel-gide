@@ -35,13 +35,13 @@ const FeedbackForm = () => {
   };
 
   return (
-    <div className="w-full max-w-md mx-auto">
+    <div className="w-full max-w-md mx-auto pt-5">
        
       <Head>
         <title>Feedback</title>
       </Head>
       <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-        <h1>Give Your Feedback</h1>
+        <h1 className="text-black py-3">Give Your Feedback</h1>
         <div className="mb-4">
           <label
             className="block text-gray-700 text-sm font-bold mb-2"

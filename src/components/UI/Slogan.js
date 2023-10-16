@@ -5,7 +5,7 @@ const Slogan = () => {
     <div
       className="bg-cover bg-center h-[15rem] flex items-center justify-center text-white"
       style={{
-        backgroundImage: `url('https://tomap-elementor.travelerwp.com/wp-content/uploads/2014/11/new-york-city-skyline-at-dusk-zo-cf1a9c35.jpg')`,
+        backgroundImage: `url('https://i.ibb.co/y8VkJSz/banner1.jpg')`,
       }}
     >
       <div className="p-8 h-full flex flex-col md:flex-row bg-opacity-75 bg-black w-full">
@@ -31,3 +31,6 @@ const Slogan = () => {
 };
 
 export default Slogan;
+
+
+

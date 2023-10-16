@@ -1,21 +1,17 @@
 import { Card, Col, Image, Row } from "antd";
-
-import {
-  ArrowRightOutlined,
-  CalendarOutlined,
-  CommentOutlined,
-  ProfileOutlined,
-} from "@ant-design/icons";
 import Link from "next/link";
 import styles from "@/styles/AllProducts.module.css";
+
 
 const AllProducts = ({ allProducts }) => {
   const products = allProducts.data;
 console.log(products)
+
+
   const { Meta } = Card;
   return (
     <>
-      <h1 className="text-2xl text-center py-8">Our Packages</h1>
+      <h1 className="text-2xl text-center lg:py-8 md:pt-5">Our Packages</h1>
       <Row
         gutter={{
           xs: 8,
@@ -45,11 +41,14 @@ console.log(products)
                 />
               }
             >
-              <h3 className={styles.title}> {product?.title}</h3>
+              <h3 className="text-base"> {product?.title}</h3>
 
-              <h3>Price: {product?.price}</h3>
+              <h3>
+                <span className="text-red-600">Price:$</span> {product?.price}
+              </h3>
 
               <h3>Rating: {product?.rating}</h3>
+
               <Link href={`/products/${product?.id}`}>
                 <button className="btn btn-info w-full  mt-5">Detail</button>
               </Link>
@@ -57,6 +56,7 @@ console.log(products)
           </Col>
         ))}
       </Row>
+      
     </>
   );
 };

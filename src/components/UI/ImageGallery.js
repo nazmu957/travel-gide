@@ -8,18 +8,18 @@ const ImageGallery = () => {
           {/* First Row */}
           <div className="w-2/3 p-2">
             <img
-              src="https://tomap-elementor.travelerwp.com/wp-content/uploads/2014/11/new-york-city-skyline-at-dusk-zo-cf1a9c35.jpg"
+              src="https://i.ibb.co/y8VkJSz/banner1.jpg"
               alt="First Image"
               className="w-full h-full"
             />
           </div>
           <div className="w-1/3 p-2">
             <img
-              src="https://tomap-elementor.travelerwp.com/wp-content/uploads/2017/06/alexei-scutari-481455-unsplash-768x512.jpg"
+              src="https://i.ibb.co/WDx5mwB/profile1.jpg"
               className="w-full h-auto"
             />
             <img
-              src="https://tomap-elementor.travelerwp.com/wp-content/uploads/2015/02/cheapest-car-insurance-in-new-jersey-nj-story.jpg"
+              src="https://i.ibb.co/DDw3Qt2/banner2.jpg"
               alt="Second Image"
               className="w-full h-auto pt-2"
             />
@@ -30,3 +30,6 @@ const ImageGallery = () => {
 };
 
 export default ImageGallery;
+
+
+

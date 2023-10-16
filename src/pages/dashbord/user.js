@@ -35,12 +35,12 @@ const UserDashboard = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">User Dashboard</a>
+          <a className="btn btn-ghost normal-case text-white text-xl">User Dashboard</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <Link href="/">Home</Link>
+              <Link className="text-base text-white font-bold" href="/">Home</Link>
             </li>
           </ul>
         </div>

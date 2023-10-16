@@ -24,19 +24,19 @@ const HomePage = ({ allProducts, allCategories }) => {
         <title>Travel-Gide</title>
         <meta
           name="description"
-          content="This is news portal of programming hero made by next-js"
+          content="This is travel web site made by next-js"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="https://i.ibb.co/vc6pqZ3/logo.jpg" />
+        <link rel="icon" href="https://i.ibb.co/Scywkr8/2461656.jpg" />
       </Head>
       <Banner />
       <AllProducts allProducts={allProducts} />
-      
+
       <ImageGallery />
       <AboutUs />
       <Slogan />
-      <Numbers />
       <Testimonial />
+      <Numbers />
       <ScrollToTopButton />
     </>
   );
@@ -69,7 +69,7 @@ export const getStaticProps = async () => {
     };
   } catch (error) {
     console.error("Error fetching data:", error);
-    // Handle error as needed
+   
     return {
       props: {
         allProducts: [],
@@ -80,16 +80,4 @@ export const getStaticProps = async () => {
   }
 };
 
-// export const getStaticProps = async () => {
-//   const res = await fetch("https://travel-gide-server-nazmu957.vercel.app/products");
-//   // const res = await fetch("http://localhost:3000/api/products");
-//   const data = await res.json();
-//   console.log(data);
 
-//   return {
-//     props: {
-//       allProducts: data,
-//     },
-//     revalidate: 10,
-//   };
-// };

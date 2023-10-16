@@ -34,8 +34,8 @@ const SortingCard = ({ service }) => {
             </svg>
           </button>
         </div>
-        <h4>{title}</h4>
-        <p>Price:${price}</p>
+        <h4 className="text-black">{title}</h4>
+        <p className="text-black">Price:${price}</p>
       </div>
     </div>
   );

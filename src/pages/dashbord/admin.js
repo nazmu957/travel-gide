@@ -32,7 +32,7 @@ const AdminDashboard = () => {
                   className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
                 >
                   <li className="text-white">
-                    <Link href={"/"}>Home</Link>
+                    <Link className='text-white' href={"/"}>Home</Link>
                   </li>
                 </ul>
               </div>
@@ -43,7 +43,7 @@ const AdminDashboard = () => {
             <div className="navbar-center hidden lg:flex">
               <ul className="menu menu-horizontal px-1">
                 <li className="text-white">
-                  <Link href={"/"}>Home</Link>
+                  <Link className='text-white font-bold text-base' href={"/"}>Home</Link>
                 </li>
               </ul>
             </div>

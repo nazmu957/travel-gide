@@ -11,7 +11,7 @@ const SortingService = ({ services }) => {
      const newPriceFilter = parseInt(event.target.value, 10);
      setPriceFilter(newPriceFilter);
 
-     // Sort the services based on the price filter value
+     
      const sorted = services.filter(
        (service) => service.price <= newPriceFilter
      );
@@ -28,7 +28,7 @@ const SortingService = ({ services }) => {
         step="25"
         onChange={handlePriceChange}
       />
-      <h3>Sort with price</h3>
+      <h3 className="text-black">Sort with price</h3>
       {sortedServices.map((service) => (
         <SortingCard key={service.id} service={service} />
       ))}

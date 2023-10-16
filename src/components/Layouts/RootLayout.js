@@ -1,27 +1,19 @@
 import {
-  ProfileOutlined,
-  MobileOutlined,
-  UserOutlined,
   FacebookFilled,
   LinkedinFilled,
-  GoogleSquareFilled,
-  TwitterSquareFilled,
   PhoneOutlined,
   YoutubeOutlined,
 } from "@ant-design/icons";
 import { Button, Layout, Menu, Space } from "antd";
 const { Content } = Layout;
 import Link from "next/link";
-import { useSession, signOut } from "next-auth/react";
 import { AuthContext } from "../../contexts/UserContext";
 import { useContext } from "react";
 
 
 const RootLayout = ({ children }) => {
   const { user, logOut } = useContext(AuthContext);
-  // const { data: session } = useSession();
 
-  // console.log(session);
   return (
     <Layout>
       <div
@@ -142,10 +134,7 @@ const RootLayout = ({ children }) => {
                 <>
                   {/* <li  className="text-sm font-semibold "><Link to="/addService">Add Service</Link></li> */}
                   <li>
-                    <Link href={"/dashbord/user"}>User</Link>
-                  </li>
-                  <li>
-                    <Link href={"/dashbord/admin"}>Admin</Link>
+                    <Link href={"/dashbord"}>Dashboard</Link>
                   </li>
                 </>
               ) : (
@@ -153,7 +142,7 @@ const RootLayout = ({ children }) => {
               )}
             </ul>
           </div>
-          <Link href={"/"} className="btn btn-ghost normal-case text-xl">
+          <Link href={"/"} className="btn btn-ghost normal-case text-xl font-serif text-black">
             Travel-Gide
           </Link>
         </div>
@@ -179,12 +168,9 @@ const RootLayout = ({ children }) => {
 
             {user?.uid ? (
               <>
-                {/* <li  className="text-sm font-semibold "><Link to="/addService">Add Service</Link></li> */}
+                
                 <li>
-                  <Link href={"/dashbord/user"}>User</Link>
-                </li>
-                <li>
-                  <Link href={"/dashbord/admin"}>Admin</Link>
+                  <Link href={"/dashbord"}>Dashboard</Link>
                 </li>
               </>
             ) : (

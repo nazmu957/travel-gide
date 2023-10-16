@@ -5,24 +5,27 @@ const ServiceCard = ( { service }) => {
     console.log(service)
     const { id,title,description,price,rating,status,image_url} = service;
     return (
-      <div className="card  bg-base-100 shadow-xl">
-        <figure>
-          <img src={image_url} alt="photo" className="w-full h-[18rem]" />
-        </figure>
-        <div className="card-body">
-          <h2 className="card-title">
+      <div className="card bg-base-100 shadow-xl sm:w-72 lg:w-80 xl:w-96">
+    <figure>
+        <img src={image_url} alt="photo" className="w-full h-[18rem] object-cover" />
+    </figure>
+    <div className="card-body p-4">
+        <h2 className="card-title text-lg font-semibold mb-2">
             {title}
-            <div className="badge badge-secondary">{price}</div>
-          </h2>
-          <p>{description}</p>
-          <div className="card-actions justify-end">
-            <div className="badge badge-outline">Ratting: {rating}</div>
+            <div className="badge badge-secondary text-xs ml-2">${price}</div>
+        </h2>
+        <p className="text-sm mb-4">{description}</p>
+        <div className="card-actions justify-end">
+            <div className="badge badge-outline">Rating: {rating}</div>
             <div className="badge badge-outline">Availability: {status}</div>
-          </div>
-
-          <Link href={`/details/${id}`}>Detail</Link>
         </div>
-      </div>
+
+        <Link href={`/details/${id}`}>
+            <button className='btn btn-xs btn-primary mt-4'>Detail</button>
+        </Link>
+    </div>
+</div>
+
     );
 };
 
