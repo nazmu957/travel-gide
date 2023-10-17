@@ -129,20 +129,15 @@ const RootLayout = ({ children }) => {
               <li>
                 <Link href={"/feedback"}>Feedback</Link>
               </li>
-
-              {user?.uid ? (
-                <>
-                  {/* <li  className="text-sm font-semibold "><Link to="/addService">Add Service</Link></li> */}
-                  <li>
-                    <Link href={"/dashbord"}>Dashboard</Link>
-                  </li>
-                </>
-              ) : (
-                <></>
-              )}
+              <li>
+                <Link href={"/dashbord"}>Dashboard</Link>
+              </li>
             </ul>
           </div>
-          <Link href={"/"} className="btn btn-ghost normal-case text-xl font-serif text-black">
+          <Link
+            href={"/"}
+            className="btn btn-ghost normal-case text-xl font-serif text-black"
+          >
             Travel-Gide
           </Link>
         </div>
@@ -166,16 +161,9 @@ const RootLayout = ({ children }) => {
               <Link href={"/feedback"}>Feedback</Link>
             </li>
 
-            {user?.uid ? (
-              <>
-                
-                <li>
-                  <Link href={"/dashbord"}>Dashboard</Link>
-                </li>
-              </>
-            ) : (
-              <></>
-            )}
+            <li>
+              <Link href={"/dashbord"}>Dashboard</Link>
+            </li>
           </ul>
         </div>
         <div className="navbar-end">

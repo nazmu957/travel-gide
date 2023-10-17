@@ -59,7 +59,7 @@ const AdminData = () => {
       ctx.fillStyle = "black";
       ctx.fillText(user.name, x, canvas.height + 20);
 
-      ctx.fillStyle = "white";
+      ctx.fillStyle = "black";
       ctx.fillText(user.payment, x, y - 10);
 
       ctx.fillStyle = "gray";
@@ -164,6 +164,7 @@ const AdminData = () => {
           <div className="col-span-full text-center">
             <button
               type="submit"
+              onClick={handleEditSubmit}
               className="mt-4 p-2 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded"
             >
               Save

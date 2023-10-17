@@ -3,6 +3,7 @@ import RootLayout from "@/components/Layouts/RootLayout";
 import React, { useState } from "react";
 import { Card } from "antd";
 import MultiProducts from "@/components/UI/MultiProducts";
+import Link from "next/link";
 const { Meta } = Card;
 
 const ProductDetailPage = ({ product }) => {
@@ -13,7 +14,7 @@ const ProductDetailPage = ({ product }) => {
 
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
-    alert("Add Booking List ??");
+    alert("Add Booking  wishList ??");
   };
   return (
     <div>
@@ -40,7 +41,7 @@ const ProductDetailPage = ({ product }) => {
             </div>
             <div className="form-control">
               <label className="cursor-pointer label">
-                <span className="text-base font-bold">Booking</span>
+                <span className="text-base font-bold">Add WishList</span>
                 <input
                   type="checkbox"
                   className="checkbox checkbox-info bg-info"
@@ -49,6 +50,9 @@ const ProductDetailPage = ({ product }) => {
                 />
               </label>
             </div>
+            <Link href={"/booking"}>
+              <button className="btn btn-primary btn-sm my-2">Booking</button>
+            </Link>
           </div>
         </div>
       </div>

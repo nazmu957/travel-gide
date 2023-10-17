@@ -3,6 +3,7 @@ import RootLayout from "@/components/Layouts/RootLayout";
 import React, { useState } from "react";
 import { Card } from "antd";
 import MultiProducts from "@/components/UI/MultiProducts";
+import Link from "next/link";
 
 const { Meta } = Card;
 
@@ -14,7 +15,7 @@ const DetailPage = ({ detail }) => {
     alert("Add Booking List ??");
   };
 
-  // console.log(detail);
+   console.log(detail);
 
   return (
     <div>
@@ -31,9 +32,10 @@ const DetailPage = ({ detail }) => {
           <h3>Location: {detail?.location}</h3>
           <h3>Availability: {detail?.availability}</h3>
           <h3>Contact Us: {detail?.contact}</h3>
+          <h3>Contact Us:{detail?.Ratting} </h3>
           <div className="form-control">
             <label className="cursor-pointer label">
-              <span className="text-xs btn btn-primary btn-sm font-bold">Booking</span>
+              <span className="text-xs btn btn-primary btn-sm font-bold">Add WishList</span>
               <input
                 type="checkbox"
                 className="checkbox checkbox-info bg-info"
@@ -42,6 +44,7 @@ const DetailPage = ({ detail }) => {
               />
             </label>
           </div>
+          <Link href={"/booking"}><button className="btn btn-primary btn-sm my-2">Booking</button></Link>
           <button className="btn text-white bg-primary btn-sm w-[5rem]">Share</button>
         </div>
       </div>
