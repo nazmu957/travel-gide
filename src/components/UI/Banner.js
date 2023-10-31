@@ -5,7 +5,7 @@ import styles from "@/styles/Banner.module.css";
 
 const Banner = () => (
   <Carousel autoplay>
-    <div className={styles["carousel-item"]}>
+    <div  className={styles["carousel-item"]}>
       <img
         src="https://i.ibb.co/y8VkJSz/banner1.jpg"
         alt="image"

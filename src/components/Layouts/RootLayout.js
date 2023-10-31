@@ -179,7 +179,7 @@ const RootLayout = ({ children }) => {
 
       <Content
         style={{
-          padding: "0 20px",
+          padding: "0 40px",
           minHeight: "100vh",
         }}
       >
