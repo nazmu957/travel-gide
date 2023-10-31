@@ -113,7 +113,7 @@ const RootLayout = ({ children }) => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <Link href={"/"}>Home</Link>
+                <Link  href={"/"}>Home</Link>
               </li>
               <li>
                 <Link href={"/service"}>Service</Link>
@@ -142,27 +142,27 @@ const RootLayout = ({ children }) => {
           </Link>
         </div>
         <div className="navbar-start hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal px-1 font-serif font-bold">
             <li>
-              <Link href={"/"}>Home</Link>
+              <Link className="text-black" href={"/"}>Home</Link>
             </li>
             <li>
-              <Link href={"/service"}>Service</Link>
-            </li>
-
-            <li>
-              <Link href={"/booking"}>Booking</Link>
+              <Link className="text-black" href={"/service"}>Service</Link>
             </li>
 
             <li>
-              <Link href={"/user"}>Profile</Link>
-            </li>
-            <li>
-              <Link href={"/feedback"}>Feedback</Link>
+              <Link className="text-black" href={"/booking"}>Booking</Link>
             </li>
 
             <li>
-              <Link href={"/dashbord"}>Dashboard</Link>
+              <Link className="text-black" href={"/user"}>Profile</Link>
+            </li>
+            <li>
+              <Link className="text-black" href={"/feedback"}>Feedback</Link>
+            </li>
+
+            <li>
+              <Link className="text-black" href={"/dashbord"}>Dashboard</Link>
             </li>
           </ul>
         </div>
