@@ -5,7 +5,7 @@ const ServiceCard = ( { service }) => {
     console.log(service)
     const { id,title,description,price,rating,status,image_url} = service;
     return (
-      <div className="card bg-base-100 shadow-xl sm:w-72 lg:w-80 xl:w-96">
+      <div className="card bg-white shadow-xl sm:w-72 lg:w-80 xl:w-96">
         <figure>
           <img
             src={image_url}
@@ -14,18 +14,24 @@ const ServiceCard = ( { service }) => {
           />
         </figure>
         <div className="card-body p-4">
-          <h2 className="card-title text-lg font-semibold mb-2">
+          <h2 className="card-title text-black text-lg font-semibold mb-2">
             {title}
-            <div className="badge badge-secondary text-xs ml-2">${price}</div>
+            <div className="badge badge-secondary  text-xs ml-2">${price}</div>
           </h2>
-          <p className="text-sm mb-4">{description}</p>
+          <p className="text-sm mb-4 text-black">{description}</p>
           <div className="card-actions justify-end">
-            <div className="badge badge-outline">Rating: {rating}</div>
-            <div className="badge badge-outline">Availability: {status}</div>
+            <div className="badge badge-outline text-black">
+              Rating: {rating}
+            </div>
+            <div className="badge badge-outline text-black">
+              Availability: {status}
+            </div>
           </div>
 
           <Link href={`/details/${id}`}>
-            <button className="btn btn-sm text-xs bg-[#1A2D48] text-white ">Detail</button>
+            <button className="btn btn-sm text-xs bg-[#1A2D48] text-white ">
+              Detail
+            </button>
           </Link>
         </div>
       </div>
