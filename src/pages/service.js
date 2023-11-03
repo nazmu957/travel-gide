@@ -28,7 +28,7 @@ const ServicePage = () => {
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
-        <button className="btn-primary p-3">Search</button>
+        <button className="btn bg-[#1A2D48] text-white rounded-none p-3">Search</button>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4 p-4 mb-5 ">
