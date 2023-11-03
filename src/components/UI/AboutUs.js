@@ -14,7 +14,7 @@ const AboutUs = () => {
   return (
     <>
       <h1 className="text-center py-8 text-black">About Us</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pb-5">
         {/* Left Side (Image) */}
         <div>
           <img
