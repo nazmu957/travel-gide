@@ -89,7 +89,7 @@ const RootLayout = ({ children }) => {
       </div>
       {/* Main Nav Part */}
 
-      <div style={{ height: "6rem" }} className="navbar  bg-red-100">
+      <div style={{ height: "6rem" }} className="navbar  bg-red-50">
         <div className="navbar-center">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
