@@ -3,7 +3,7 @@ import React from "react";
 const ImageGallery = () => {
     return (
       <>
-        <h1 className="text-center py-8">Gallery</h1>
+        <h1 className="text-center py-8 text-black">Gallery</h1>
         <div className="flex flex-wrap  ">
           {/* First Row */}
           <div className="w-2/3 p-2">

@@ -113,7 +113,7 @@ const RootLayout = ({ children }) => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <Link  href={"/"}>Home</Link>
+                <Link href={"/"}>Home</Link>
               </li>
               <li>
                 <Link href={"/service"}>Service</Link>
@@ -144,25 +144,37 @@ const RootLayout = ({ children }) => {
         <div className="navbar-start hidden lg:flex">
           <ul className="menu menu-horizontal px-1 font-serif font-bold">
             <li>
-              <Link className="text-black" href={"/"}>Home</Link>
+              <Link className="text-black" href={"/"}>
+                Home
+              </Link>
             </li>
             <li>
-              <Link className="text-black" href={"/service"}>Service</Link>
-            </li>
-
-            <li>
-              <Link className="text-black" href={"/booking"}>Booking</Link>
-            </li>
-
-            <li>
-              <Link className="text-black" href={"/user"}>Profile</Link>
-            </li>
-            <li>
-              <Link className="text-black" href={"/feedback"}>Feedback</Link>
+              <Link className="text-black" href={"/service"}>
+                Service
+              </Link>
             </li>
 
             <li>
-              <Link className="text-black" href={"/dashbord"}>Dashboard</Link>
+              <Link className="text-black" href={"/booking"}>
+                Booking
+              </Link>
+            </li>
+
+            <li>
+              <Link className="text-black" href={"/user"}>
+                Profile
+              </Link>
+            </li>
+            <li>
+              <Link className="text-black" href={"/feedback"}>
+                Feedback
+              </Link>
+            </li>
+
+            <li>
+              <Link className="text-black" href={"/dashbord"}>
+                Dashboard
+              </Link>
             </li>
           </ul>
         </div>
@@ -187,27 +199,27 @@ const RootLayout = ({ children }) => {
       </Content>
       <footer
         style={{ padding: "5rem" }}
-        className="footer p-10 bg-black text-base-content"
+        className="footer p-10 bg-[#1A2D48] text-base-content"
       >
         <nav className="text-white">
-          <header className="footer-title">Services</header>
-          <a className="link link-hover">Branding</a>
-          <a className="link link-hover">Design</a>
-          <a className="link link-hover">Marketing</a>
-          <a className="link link-hover">Advertisement</a>
+          <header className="footer-title text-white">Services</header>
+          <a className="link link-hover text-white">Branding</a>
+          <a className="link link-hover text-white">Design</a>
+          <a className="link link-hover text-white">Marketing</a>
+          <a className="link link-hover text-white">Advertisement</a>
         </nav>
         <nav className="text-white">
           <header className="footer-title">Company</header>
-          <a className="link link-hover">About us</a>
-          <a className="link link-hover">Contact</a>
-          <a className="link link-hover">Jobs</a>
-          <a className="link link-hover">Press kit</a>
+          <a className="link link-hover text-white">About us</a>
+          <a className="link link-hover text-white">Contact</a>
+          <a className="link link-hover text-white">Jobs</a>
+          <a className="link link-hover text-white">Press kit</a>
         </nav>
         <nav className="text-white">
           <header className="footer-title">Legal</header>
-          <a className="link link-hover">Terms of use</a>
-          <a className="link link-hover">Privacy policy</a>
-          <a className="link link-hover">Cookie policy</a>
+          <a className="link link-hover text-white">Terms of use</a>
+          <a className="link link-hover text-white">Privacy policy</a>
+          <a className="link link-hover text-white">Cookie policy</a>
         </nav>
         <form>
           <header className="footer-title text-white">Newsletter</header>
@@ -218,7 +230,7 @@ const RootLayout = ({ children }) => {
                 placeholder="username@site.com"
                 className="input input-bordered w-full pr-16"
               />
-              <button className="btn btn-primary absolute top-0 right-0 rounded-l-none">
+              <button className="btn btn-primary bg-[#1A2D48] absolute top-0 right-0 rounded-l-none">
                 Subscribe
               </button>
             </div>

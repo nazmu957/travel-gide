@@ -1,7 +1,7 @@
 const Testimonial = () => {
   return (
     <div className="container mx-auto py-8 ">
-      <h1 className="text-center py-8">Testimonials</h1>
+      <h1 className="text-center py-8 text-black">Testimonials</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <div className="card  bg-base-100 shadow-xl">
           <div className="card-body">

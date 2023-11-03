@@ -13,7 +13,7 @@ const AboutUs = () => {
 
   return (
     <>
-      <h1 className="text-center py-8">About Us</h1>
+      <h1 className="text-center py-8 text-black">About Us</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
         {/* Left Side (Image) */}
         <div>
@@ -30,7 +30,7 @@ const AboutUs = () => {
         <div className="">
           <div className="">
             <div className=" p-6 rounded shadow">
-              <h2 className="text-2xl font-semibold ">Our mission</h2>
+              <h2 className="text-2xl font-semibold text-black ">Our mission</h2>
               <p className="text-gray-700 text-xl">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
                 dolores! Facilis expedita possimus voluptatum, alias,
@@ -38,7 +38,7 @@ const AboutUs = () => {
                 dolor id aliquam, amet ratione tempora?
               </p>
 
-              <h2 className="text-2xl font-semibold mb-4">Our Story</h2>
+              <h2 className="text-2xl font-semibold mb-4 text-black pt-5">Our Story</h2>
               <p className="text-gray-700 text-xl">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
                 dolores! Facilis expedita possimus voluptatum, alias,

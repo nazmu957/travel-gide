@@ -29,7 +29,7 @@ const ScrollToTopButton = () => {
   return (
     <div className={`fixed bottom-8 right-8 ${isVisible ? "block" : "hidden"}`}>
       <button
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        className="bg-black hover:bg-[#1A2D48] text-white font-bold py-2 px-4 rounded"
         onClick={scrollToTop}
       >
         Scroll to Top

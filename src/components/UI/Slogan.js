@@ -10,7 +10,7 @@ const Slogan = () => {
     >
       <div className="p-8 h-full flex flex-col md:flex-row bg-opacity-75 bg-black w-full">
         <div className="w-full md:w-2/3 mb-4 md:mb-0 md:mr-4">
-          <h1 className="lg:text-4xl font-bold mb-4">Our mission</h1>
+          <h1 className="lg:text-3xl font-bold mb-4">Our mission</h1>
           <p className="lg:text-lg">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
             vehicula ipsum vitae dolor ultrices, vel feugiat lacus tincidunt.
@@ -20,7 +20,7 @@ const Slogan = () => {
         </div>
         <div className="w-full md:w-1/3 flex items-center justify-center">
           <div>
-            <button className="btn-primary px-8 py-4 font-bold lg:text-lg">
+            <button className="btn px-8 text-white font-bold lg:text-sm bg-[#1A2D48]">
               Learn More
             </button>
           </div>
