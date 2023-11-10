@@ -135,18 +135,18 @@ const BookingPage = () => {
                 <input
                   id="slotAvailable"
                   type="checkbox"
-                  className="toggle toggle-primary border-4"
+                  className="toggle border-4"
                   checked={slotAvailable}
                   onChange={() => setSlotAvailable(!slotAvailable)}
                 />
               </label>
             </div>
             <Link href={"/policy"}>
-              <span className="text-primary">Cancellation Policy</span>
+              <span className="text-white">Cancellation Policy</span>
             </Link>
           </div>
 
-          <button type="submit" className="btn btn-primary mt-4">
+          <button type="submit" className="btn btn-primary bg-white text-black mt-4">
             Reserve Now
           </button>
         </div>
