@@ -46,12 +46,12 @@ const BookingPage = () => {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <div className="max-w-2xl text-black mx-auto p-6 border rounded-lg shadow-lg mt-10 bg-[#1A2C48]">
-          <h2 className="text-2xl text-black font-semibold mb-4">
+        <div className="max-w-2xl text-white mx-auto p-6 border rounded-lg shadow-lg mt-10 bg-[#22324b]">
+          <h2 className="text-3xl text-white font-semibold mb-4">
             Booking Form
           </h2>
           <div className="mb-4">
-            <label className="block text-gray-700 text-sm font-bold mb-2">
+            <label className="block text-base text-sm font-bold mb-2">
               Select Date and Time:
             </label>
             <DatePicker
@@ -111,7 +111,7 @@ const BookingPage = () => {
               value={phoneNumber}
               onChange={(e) => setPhoneNumber(e.target.value)}
               placeholder="Enter phone number"
-              className="mt-2"
+              className="mt-2 bg-white"
             />
           </div>
 
@@ -121,7 +121,7 @@ const BookingPage = () => {
               id="details"
               rows={4}
               value={details}
-              className="mt-3"
+              className="mt-3 bg-white"
               onChange={(e) => setDetails(e.target.value)}
               placeholder="Enter details"
               maxLength={6}
