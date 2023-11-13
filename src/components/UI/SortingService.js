@@ -28,7 +28,7 @@ const SortingService = ({ services }) => {
         step="25"
         onChange={handlePriceChange}
       />
-      <h3 className="text-black">Sort with price</h3>
+      <h3 className="text-black p-3">Sort with price</h3>
       {sortedServices.map((service) => (
         <SortingCard key={service.id} service={service} />
       ))}
