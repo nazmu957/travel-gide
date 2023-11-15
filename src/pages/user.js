@@ -135,9 +135,9 @@ const { user, logOut } = useContext(AuthContext);
               </div>
             </div>
             <div className="col-span-1 sm:col-span-1">
-              <div className="card bg-[#1A2C48] shadow-xl">
+              <div className="card bg-[#1A2C48] text-white shadow-xl">
                 <div className="card-body">
-                  <h2 className="text-center p-3">Payment Method</h2>
+                  <h2 className="text-center text-white p-3">Payment Method</h2>
                   <p className="text-center">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   </p>
