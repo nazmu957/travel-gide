@@ -36,21 +36,20 @@ const FeedbackForm = () => {
 
   return (
     <div className="w-full max-w-md mx-auto pt-5">
-       
       <Head>
         <title>Feedback</title>
       </Head>
-      <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-        <h1 className="text-black py-3">Give Your Feedback</h1>
+      <form className="bg-[#1A2C48] text-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <h1 className=" py-3">Give Your Feedback</h1>
         <div className="mb-4">
           <label
-            className="block text-gray-700 text-sm font-bold mb-2"
+            className="block  text-sm font-bold mb-2"
             htmlFor="username"
           >
             Username
           </label>
           <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
             id="username"
             name="username"
             type="text"
@@ -61,13 +60,13 @@ const FeedbackForm = () => {
         </div>
         <div className="mb-4">
           <label
-            className="block text-gray-700 text-sm font-bold mb-2"
+            className="block  text-sm font-bold mb-2"
             htmlFor="email"
           >
             Email
           </label>
           <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="shadow appearance-none border rounded w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline"
             id="email"
             name="email"
             type="email"
@@ -78,7 +77,7 @@ const FeedbackForm = () => {
         </div>
         <div className="mb-6">
           <label
-            className="block text-gray-700 text-sm font-bold mb-2"
+            className="block  text-sm font-bold mb-2"
             htmlFor="comment"
           >
             Comment
@@ -94,7 +93,7 @@ const FeedbackForm = () => {
         </div>
         <div className="my-5">
           <label
-            className="block text-gray-700 text-sm font-bold mb-2"
+            className="block text-sm font-bold mb-2"
             htmlFor="comment"
           >
             Ratting
