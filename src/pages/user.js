@@ -125,8 +125,8 @@ const { user, logOut } = useContext(AuthContext);
           />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="col-span-1 sm:col-span-1">
-              <div className="card  bg-base-100 shadow-xl mt-5">
+            <div className="col -span-1 sm:col-span-1">
+              <div className="card text-white bg-[#1A2C48] shadow-xl mt-5">
                 <div className="card-body">
                   <h2 className="card-title">Western Blt From San Francisco</h2>
                   <p>Price: $595</p>
