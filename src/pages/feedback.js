@@ -128,7 +128,7 @@ const FeedbackForm = () => {
             type="button"
             onClick={handleClear}
           >
-            Clear
+            Clear all
           </button>
         </div>
       </form>
