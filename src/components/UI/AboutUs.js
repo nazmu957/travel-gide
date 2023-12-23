@@ -30,16 +30,16 @@ const AboutUs = () => {
         <div className="">
           <div className="">
             <div className=" p-6 rounded shadow">
-              <h2 className="text-2xl font-semibold text-black ">Our mission</h2>
-              <p className="text-gray-700 text-xl">
+              <h2 className="lg:text-2xl  font-semibold text-black ">Our mission</h2>
+              <p className="text-gray-700 text-sm">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
                 dolores! Facilis expedita possimus voluptatum, alias,
                 voluptatibus enim minima autem iste quas velit officia voluptas
                 dolor id aliquam, amet ratione tempora?
               </p>
 
-              <h2 className="text-2xl font-semibold mb-4 text-black pt-5">Our Story</h2>
-              <p className="text-gray-700 text-xl">
+              <h2 className="lg:text-2xl font-semibold mb-4 text-black pt-5">Our Story</h2>
+              <p className="text-gray-700 text-sm">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
                 dolores! Facilis expedita possimus voluptatum, alias,
                 voluptatibus enim minima autem iste quas velit officia voluptas
