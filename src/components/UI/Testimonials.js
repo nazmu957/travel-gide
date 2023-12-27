@@ -8,7 +8,7 @@ const Testimonial = () => {
             <div className="flex justify-center">
               <img
                 className="w-[5rem] rounded-full"
-                src="https://i.ibb.co/rZkMX3f/person1.jpg"
+                src="https://img.freepik.com/free-photo/bohemian-man-with-his-arms-crossed_1368-3542.jpg?w=826&t=st=1703673112~exp=1703673712~hmac=07d73f39feba0959a2abe16888a76f5771133f7668f32cc037e4cea934160104"
                 alt=""
               />
             </div>
@@ -20,7 +20,7 @@ const Testimonial = () => {
             </p>
           </div>
         </div>
-        <div className="card  bg-base-100 shadow-xl">
+        <div className="card  bg-base-100 shadow-xl ">
           <div className="card-body">
             <div className="flex justify-center">
               <img
@@ -42,7 +42,7 @@ const Testimonial = () => {
             <div className="flex justify-center">
               <img
                 className="w-[5rem] rounded-full"
-                src="https://i.ibb.co/rZkMX3f/person1.jpg"
+                src="https://img.freepik.com/free-photo/bohemian-man-with-his-arms-crossed_1368-3542.jpg?w=826&t=st=1703673112~exp=1703673712~hmac=07d73f39feba0959a2abe16888a76f5771133f7668f32cc037e4cea934160104"
                 alt=""
               />
             </div>
