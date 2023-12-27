@@ -31,14 +31,25 @@ const LoginForm = () => {
     }
   };
   return (
-    <div className="hero ">
+    <div className="hero">
       <Head>
         <title>Login</title>
       </Head>
-      <div className="hero-content flex-col my-[5rem]">
-        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+      <div className="hero-content bg-red-100 flex-col my-[5rem]">
+        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-white">
           <form onSubmit={handleLogin} className="card-body">
             <h1 className="text-center font-bold">Login</h1>
+            <div className="">
+              <h5>Testing User Detail:</h5>
+              <div className="p-2">
+                <h6>
+                  Email: <span className="text-black">sakib@gmail.com</span>
+                </h6>
+                <h6>
+                  Password: <span className="text-black">123456</span>
+                </h6>
+              </div>
+            </div>
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Email</span>
