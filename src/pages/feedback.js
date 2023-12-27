@@ -91,9 +91,9 @@ const FeedbackForm = () => {
             onChange={handleInputChange}
           />
         </div>
-        <div className="my-5">
+        <div className="my-5 bg-white">
           <label
-            className="block text-sm font-bold mb-2"
+            className="block text-sm font-bold mb-2 "
             htmlFor="comment"
           >
             Ratting
@@ -103,11 +103,11 @@ const FeedbackForm = () => {
             min={0}
             max="4"
             value={formData.rangeValue}
-            className="range"
+            className="range "
             step="1"
             onChange={handleRangeChange}
           />
-          <div className="w-full flex justify-between text-xs px-2">
+          <div className="w-full flex justify-between text-xs px-2 text-black">
             <span>1</span>
             <span>2</span>
             <span>3</span>
