@@ -14,9 +14,8 @@ const Testimonial = () => {
             </div>
             <h2 className="p-1 text-center">Jon</h2>
             <p className="text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sit
-              velit eaque deserunt repellat dolores iure autem laudantium
-              nesciunt architecto magnam, voluptatem
+              Best Gong for Markets Story: Being able to hear the unfiltered
+              voice of your market is one of the most powerful benefits of Gong.
             </p>
           </div>
         </div>
@@ -30,10 +29,10 @@ const Testimonial = () => {
               />
             </div>
             <h2 className="p-1 text-center">Cruge</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sit
-              velit eaque deserunt repellat dolores iure autem laudantium
-              nesciunt architecto magnam, voluptatem
+            <p className="text-center">
+              This is a basic technique that almost any brand with a web
+              presence can utilize. The devil is in the details, though - make
+              sure you ask permission.
             </p>
           </div>
         </div>
@@ -47,10 +46,10 @@ const Testimonial = () => {
               />
             </div>
             <h2 className="p-1 text-center">Tom</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sit
-              velit eaque deserunt repellat dolores iure autem laudantium
-              nesciunt architecto magnam, voluptatem
+            <p className="text-center">
+              We hope that with detailed customer stories, potential customers
+              will be able to get concrete answers to how our products work and
+              how it might apply to them.
             </p>
           </div>
         </div>
@@ -64,10 +63,9 @@ const Testimonial = () => {
               />
             </div>
             <h2 className="p-1 text-center">Zaman</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sit
-              velit eaque deserunt repellat dolores iure autem laudantium
-              nesciunt architecto magnam, voluptatem
+            <p className="text-center">
+              Luckily, the same principle can be applied across the board -
+              known and/or respected tech personalities can boost tech brands so
             </p>
           </div>
         </div>
