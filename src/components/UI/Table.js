@@ -31,7 +31,7 @@ const Table = () => {
   };
 
   return (
-    <div className="w-full p-4 mx-auto">
+    <div className="w-full p-4 mx-auto bg-white">
       <h2 className="text-2xl font-semibold mb-4">Your Booking History</h2>
       <h3 className="py-3">Your Current Booking Status</h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">

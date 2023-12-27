@@ -40,14 +40,14 @@ const LoginForm = () => {
           <form onSubmit={handleLogin} className="card-body">
             <h1 className="text-center font-bold">Login</h1>
             <div className="">
-              <h5>Testing User Detail:</h5>
+              <h5>Testing User Info:</h5>
               <div className="p-2">
-                <h6>
+                <h4>
                   Email: <span className="text-black">sakib@gmail.com</span>
-                </h6>
-                <h6>
+                </h4>
+                <h4>
                   Password: <span className="text-black">123456</span>
-                </h6>
+                </h4>
               </div>
             </div>
             <div className="form-control">

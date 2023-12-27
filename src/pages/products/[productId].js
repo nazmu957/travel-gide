@@ -17,8 +17,8 @@ const ProductDetailPage = ({ product }) => {
     alert("Add Booking  wishList ??");
   };
   return (
-    <div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
+    <div className="mx-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 ">
         <div className="m-2 card glass">
           <h1 className="text-center text-black text-2xl my-4">
             Package Details

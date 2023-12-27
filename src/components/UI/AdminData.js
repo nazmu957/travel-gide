@@ -68,7 +68,7 @@ const AdminData = () => {
   }, [userData]);
 
   return (
-    <div className="w-3/4 p-4 mx-auto">
+    <div className="w-3/4 p-4 mx-auto bg-white">
       <h2 className="text-2xl py-4 font-semibold mb-4 text-center">
         Manage All Service/User/Booking
       </h2>
