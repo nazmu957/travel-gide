@@ -29,7 +29,7 @@ console.log(products)
               className="gutter-row"
               xs={24}
               sm={12}
-              md={8}
+              md={12}
               lg={6}
             >
               <Card
