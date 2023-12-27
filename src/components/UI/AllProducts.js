@@ -11,7 +11,7 @@ console.log(products)
   const { Meta } = Card;
   return (
     <>
-      <div className="lg:mx-[4rem]">
+      <div className="lg:mx-[4rem] p-[2rem]">
         <h1 className="text-2xl text-center mt-5 lg:py-8 md:pt-5 text-black ">
           Our Services
         </h1>
