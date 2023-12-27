@@ -33,7 +33,7 @@ const HomePage = ({ allProducts, allCategories }) => {
       <AllProducts allProducts={allProducts} />
 
       <ImageGallery />
-      <AboutUs />
+      <AboutUs  />
       <Slogan />
       <Testimonial />
       <Numbers />

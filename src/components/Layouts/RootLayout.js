@@ -15,7 +15,7 @@ const RootLayout = ({ children }) => {
   const { user, logOut } = useContext(AuthContext);
 
   return (
-    <Layout>
+    <Layout >
       <div
         style={{
           display: "flex",
@@ -191,7 +191,7 @@ const RootLayout = ({ children }) => {
 
       <Content
         style={{
-          padding: "0 40px",
+          padding: "0 0px",
           minHeight: "100vh",
         }}
       >
