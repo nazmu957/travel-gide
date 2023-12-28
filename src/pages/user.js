@@ -52,7 +52,7 @@ const { user, logOut } = useContext(AuthContext);
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
         {/* Left Part */}
 
-        <div className="col-span-1 md:col-span-1 p-4 md:w-35">
+        <div className="col-span-1 md:col-span-1 p-4 md:w-35 bg-[#1A2C48] text-white lg:mt-[5rem]">
           <div className="flex justify-center">
             <div>
               <img src={imageUrl} alt="Image" className="mb-4 w-[15rem]" />
