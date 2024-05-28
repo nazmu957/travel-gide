@@ -15,7 +15,7 @@ const RootLayout = ({ children }) => {
   const { user, logOut } = useContext(AuthContext);
 
   return (
-    <Layout >
+    <Layout>
       <div
         style={{
           display: "flex",
@@ -89,8 +89,8 @@ const RootLayout = ({ children }) => {
       </div>
       {/* Main Nav Part */}
 
-      <div style={{ height: "6rem" }} className="navbar  bg-red-50">
-        <div className="navbar-center">
+      <div style={{ height: "6rem" }} className="navbar  bg-[#3c6199]">
+        <div className="navbar-center ">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
@@ -136,43 +136,43 @@ const RootLayout = ({ children }) => {
           </div>
           <Link
             href={"/"}
-            className="btn btn-ghost normal-case text-xl font-serif text-black"
+            className="btn btn-ghost normal-case text-xl font-serif text-white"
           >
             Travel-Gide
           </Link>
         </div>
-        <div className="navbar-start hidden lg:flex">
+        <div className="navbar-start hidden  lg:flex">
           <ul className="menu menu-horizontal px-1 font-serif font-bold">
             <li>
-              <Link className="text-black" href={"/"}>
+              <Link className="text-white" href={"/"}>
                 Home
               </Link>
             </li>
             <li>
-              <Link className="text-black" href={"/service"}>
+              <Link className="text-white" href={"/service"}>
                 Service
               </Link>
             </li>
 
             <li>
-              <Link className="text-black" href={"/booking"}>
+              <Link className="text-white" href={"/booking"}>
                 Booking
               </Link>
             </li>
 
             <li>
-              <Link className="text-black" href={"/user"}>
+              <Link className="text-white" href={"/user"}>
                 Profile
               </Link>
             </li>
             <li>
-              <Link className="text-black" href={"/feedback"}>
+              <Link className="text-white" href={"/feedback"}>
                 Feedback
               </Link>
             </li>
 
             <li>
-              <Link className="text-black" href={"/dashbord"}>
+              <Link className="text-white" href={"/dashbord"}>
                 Dashboard
               </Link>
             </li>
